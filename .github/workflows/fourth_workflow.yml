@@ -1,7 +1,7 @@
 name: Fourth Workflow
 on:
     workflow_run:
-        workflows: [Third workflow]
+        workflows: [Third Workflow]
         types:
             - completed
 
