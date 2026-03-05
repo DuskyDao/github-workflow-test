@@ -6,7 +6,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: List Files
-              run: ls -a
+              run: lssfd -a
             - name: Copy Repo
               run: |
                   git init
