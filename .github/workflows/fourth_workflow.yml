@@ -6,8 +6,8 @@ on:
             - completed
 
 jobs:
-    run-first-command:
+    hello-command:
         runs-on: ubuntu-latest
         steps:
             - name: List Files
-              run: echo "Display Hello World""
+              run: echo "Hello""
