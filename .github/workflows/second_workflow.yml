@@ -1,0 +1,24 @@
+name: First Workflow
+on: [push, pull_request]
+# on: workflow_dispatch
+
+jobs:
+    run-first-command:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Display node version
+              run: |
+                  node -v
+                  npm -v
+    run-parallel-command:
+        runs-on: windows-latest
+        steps:
+            - name: Display Pythone version
+              run: |
+                  python -V
+                  pip -V
+    run-second-command:
+        runs-on: macos-latest
+        needs: [run-first-command]
+            - name: Display Node Version on MacOs
+              run: node -v              
