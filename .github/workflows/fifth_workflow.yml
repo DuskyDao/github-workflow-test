@@ -1,9 +1,9 @@
 name: Fifth Workflow
-on: [push, issues]
+on: [push, issues, pull_request]
 # on: workflow_dispatch
 
 jobs:
-  run-first-command:
+  run-fifth-command:
     runs-on: ubuntu-latest
     steps:
       - name: Event Vars
